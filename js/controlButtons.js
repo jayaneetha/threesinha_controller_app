@@ -1,12 +1,12 @@
 var baseUrl="http://localhost:9000";
-var upApiCall="/up";
-var stopApiCall="/stop";
-var downApiCall="/down";
+var upApiCall="/command/up";
+var stopApiCall="/command/stop";
+var downApiCall="/command/down";
 
 $("#up").click(function(){
 
 
-    alert("up");
+    alert("Up");
     controlFunctions("up");
 
 
@@ -15,7 +15,7 @@ $("#up").click(function(){
 $("#stop").click(function(){
 
 
-    alert("stop");
+    alert("Stop");
     controlFunctions("stop");
 
 
@@ -24,7 +24,7 @@ $("#stop").click(function(){
 $("#down").click(function(){
 
 
-    alert("down");
+    alert("Down");
     controlFunctions("down");
 
 
