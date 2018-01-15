@@ -45,15 +45,15 @@ function controlFunctions(func) {
 
     var url = baseUrl + apiCall;
 
-    alert("url :" + url);
+    // alert("url :" + url);
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            console.log('Message Sent Successfully');
+            // console.log('Message Sent Successfully');
             alert('Message Sent Successfully');
 
         } else if (this.readyState == 4) {
-            console.error('ERROR: while dealing with function execution.');
+            // console.error('ERROR: while dealing with function execution.');
             alert('ERROR: while dealing with function execution.');
 
         }
