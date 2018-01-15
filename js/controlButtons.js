@@ -58,7 +58,7 @@ function controlFunctions(func) {
 
         }
     };
-    xhttp.setRequestHeader("Cache-Control", "no-cache");
     xhttp.open("GET", url, true);
+    xhttp.setRequestHeader("Cache-Control", "no-cache");
     xhttp.send();
 }
