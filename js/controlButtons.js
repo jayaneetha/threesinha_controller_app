@@ -1,30 +1,30 @@
-var baseUrl="http://localhost:9000";
-var upApiCall="/command/up";
-var stopApiCall="/command/stop";
-var downApiCall="/command/down";
+var baseUrl = "http://159.203.181.233";
+var upApiCall = "/command/up";
+var stopApiCall = "/command/stop";
+var downApiCall = "/command/down";
 
-$("#up").click(function(){
+$("#up").click(function () {
 
 
-    alert("Up");
+    console.log("Up");
     controlFunctions("up");
 
 
 });
 
-$("#stop").click(function(){
+$("#stop").click(function () {
 
 
-    alert("Stop");
+    console.log("Stop");
     controlFunctions("stop");
 
 
 });
 
-$("#down").click(function(){
+$("#down").click(function () {
 
 
-    alert("Down");
+    console.log("Down");
     controlFunctions("down");
 
 
@@ -32,15 +32,15 @@ $("#down").click(function(){
 
 
 function controlFunctions(func) {
-"use strict";
-    var apiCall="";
+    "use strict";
+    var apiCall = "";
 
-    if(func==="up"){
-        apiCall=upApiCall;
-    }else if(func==="stop"){
-        apiCall=stopApiCall;
-    }else if(func==="down"){
-        apiCall=downApiCall;
+    if (func === "up") {
+        apiCall = upApiCall;
+    } else if (func === "stop") {
+        apiCall = stopApiCall;
+    } else if (func === "down") {
+        apiCall = downApiCall;
     }
 
 
@@ -53,11 +53,11 @@ function controlFunctions(func) {
         jsonpCallback: "SMS",
         cache: true,
         success: function (data) {
-            alert('Message Sent Successfully');
+            console.log('Message Sent Successfully');
         },
         error: function (data) {
 
-            alert('ERROR: while dealing with function execution.');
+            console.error('ERROR: while dealing with function execution.');
 
         }, timeout: 5000
 
