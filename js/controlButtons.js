@@ -1,4 +1,4 @@
-var baseUrl = "http://159.203.181.233";
+var baseUrl = "http://207.246.117.201";
 var upApiCall = "/command/up";
 var stopApiCall = "/command/stop";
 var downApiCall = "/command/down";
